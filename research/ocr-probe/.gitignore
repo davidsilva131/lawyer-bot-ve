@@ -1,0 +1,10 @@
+# Regenerable / heavy artifacts — see samples/README.md and evidence.md
+.venv/
+tessdata/
+samples/*.pdf
+runs/*.txt
+runs/*.json
+runs/*.png
+*.html
+*.txt
+__pycache__/
