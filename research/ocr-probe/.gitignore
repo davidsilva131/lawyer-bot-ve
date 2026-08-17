@@ -5,7 +5,6 @@ samples/*.pdf
 runs/*.txt
 runs/*.json
 runs/*.png
-runs/*.html
-*ddg*.html*.html
+*.html
 *.txt
 __pycache__/
