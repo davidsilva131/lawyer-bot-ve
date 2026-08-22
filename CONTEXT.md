@@ -4,7 +4,7 @@ The context of this effort is a **feasibility study** for a public legal Q&A bot
 
 ## Glossary
 
-- **The bot (lawyer-bot-ve)**: a public messaging bot — WhatsApp or Telegram (undecided; the study decides) — that answers questions about Venezuelan law, grounded on official legal texts, for Venezuelan lawyers. Status: being studied, not built.
+- **The bot (lawyer-bot-ve)**: a public **Telegram** bot that answers questions about Venezuelan law, grounded on official legal texts, for Venezuelan lawyers. Status: being studied, not built. Platform decided 2026-08-22: **Telegram only — WhatsApp discarded** (map #15, ticket #19).
 - **End user**: a Venezuelan lawyer (licensed legal professional) who asks legal questions to the bot. The bot is public; anyone may ask, but the intended audience is lawyers.
 - **Legal question**: an in-scope user message — a question about Venezuelan law, any matter (civil, penal, laboral, mercantil, tributario, constitucional, administrativo, familia). The bot answers legal information, not personalized legal advice.
 - **Off-topic question**: a user message outside the covered subjects (art, sports, politics, general chat, foreign law, personal matters). The bot must indicate the question is not about the covered subjects and not answer it.
@@ -13,7 +13,7 @@ The context of this effort is a **feasibility study** for a public legal Q&A bot
 - **Official source**: a primary, authoritative publisher of Venezuelan law — the Gaceta Oficial, the TSJ, the Asamblea Nacional (as opposed to third-party consolidations like leyesvenezuela.com).
 - **Answer format**: the shape of a bot response — direct answer, citation of the applicable article and law (with Gaceta Oficial reference where applicable), caveats, and disclaimer. Undecided; resolved by a grilling ticket.
 - **Feasibility study**: the destination of this map — a consolidated document (`docs/feasibility-study.md`) concluding whether the bot is viable, which platform to use, the corpus approach, gating design, and the regulatory risk register. It is preparation for a larger implementation effort.
-- **Platform**: the messaging channel the bot runs on — WhatsApp (official Business Platform/Cloud API) or Telegram (Bot API). The study compares and decides.
+- **Platform**: the messaging channel the bot runs on — **Telegram (Bot API)**. Decided by the PO 2026-08-22: Telegram-only; WhatsApp discarded (map #15, ticket #19). The WhatsApp-vs-Telegram comparison remains in `docs/feasibility-study.md` §2 as the archived record.
 
 ## Notes for agents
 
