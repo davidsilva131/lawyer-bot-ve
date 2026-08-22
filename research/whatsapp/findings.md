@@ -1,3 +1,5 @@
+> **ARCHIVED 2026-08-22 — WhatsApp discarded (PO decision; map #15, issue #19).** lawyer-bot-ve is **Telegram-only**; no WhatsApp work is planned. This findings document is retained as the archived decision record behind the feasibility study's §2.1 analysis.
+
 #  — Findings
 
 Research for ticket # (wayfinder map #1, repo lawyer-bot-ve). Researched 2026-08-16 by an AFK subagent; verified via primary-source fetches.
