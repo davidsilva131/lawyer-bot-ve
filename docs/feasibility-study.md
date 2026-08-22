@@ -2,7 +2,7 @@
 
 **Public WhatsApp/Telegram bot answering questions about Venezuelan law, grounded on official sources, for Venezuelan lawyers.**
 
-- **Status:** Final — synthesized from wayfinder map #1, tickets #2–#7 (all resolved, August 2026).
+- **Status:** Final — synthesized from wayfinder map #1, tickets #2–#7 (all resolved, August 2026). **Updated 2026-08-22 (map #15, issue #19): the PO re-decided the platform — Telegram only; WhatsApp discarded.** The WhatsApp analysis in §2 is retained as the comparative record.
 - **Sources:** research findings under `research/<name>/findings.md` (corpus, whatsapp, telegram, topic-gating, regulation) and the resolution of ticket #7 (response format, grilled HITL).
 - **Language / finance note:** this study contains no monetary figures — costs are described qualitatively only (free tier, paid tier, per-conversation pricing above allowances).
 
@@ -10,7 +10,7 @@
 
 ## 1. Executive verdict
 
-**The bot is viable. Build it — WhatsApp first, Telegram as a mirror from day one.**
+**The bot is viable. Build it — Telegram only.** (2026-08-22 PO decision: WhatsApp discarded — see §2.4. The original "WhatsApp first, Telegram as a mirror" verdict is superseded.)
 
 All four feasibility gates of the map close GREEN (with documented conditions):
 
@@ -21,13 +21,15 @@ All four feasibility gates of the map close GREEN (with documented conditions):
 | (3) Reliable topic gating | ✅ Feasible | Hybrid 3-stage pipeline (deterministic pre-filter + LLM gate + retrieval gate) reaches estimated false-accept < 1% with false-reject ≤ 10%, precision-biased |
 | (4) Regulatory / liability risks assessed | ✅ Feasible with standard safeguards | No binding VE data-protection statute in force; CC 1185 fault liability is hard to trigger for a labeled informational tool; **lawyers as verified users is the single strongest defense** |
 
-**Recommended architecture (outline):** a single backend serving two thin channel adapters (WhatsApp Cloud API + Telegram Bot API). User-initiated sessions; topic-gated; retrieval over the official corpus only; answers as legal-memo citations with links to official texts; onboarding disclosure + `/disclaimer` command; short retention and no profiling.
+**Recommended architecture (outline):** a single backend serving one thin channel adapter (Telegram Bot API). User-initiated sessions; topic-gated; retrieval over the official corpus only; answers as legal-memo citations with links to official texts; onboarding disclosure + `/disclaimer` command; short retention and no profiling. (Posture updated 2026-08-22 — WhatsApp discarded, see §2.4.)
 
-**The dominant risk is operational, not technical or regulatory:** completing WhatsApp Business onboarding (business verification, display-name/template approvals, and — most importantly — Meta billing rails for a Venezuelan entity, which remain unverified). Everything else has a tested path.
+**The risks are operational, not technical or regulatory.** With WhatsApp discarded (2026-08-22), the key operational fragility is Telegram reach — the Jan 2025 state-ordered block showed availability can be interrupted by government action (§2.2). Everything else has a tested path.
 
 ---
 
-## 2. Platform recommendation: WhatsApp primary, Telegram mirror
+## 2. Platform analysis: WhatsApp vs Telegram (original record)
+
+**Update 2026-08-22 — PO decision:** WhatsApp is discarded; the bot is **Telegram-only** (map #15, issue #19). §2.1–§2.3 are the original comparison and recommendation, kept as the decision record; §2.4 records the new posture.
 
 ### 2.1 WhatsApp Business Platform (Cloud API) — 🟢 PRIMARY
 
@@ -65,6 +67,16 @@ All four feasibility gates of the map close GREEN (with documented conditions):
 | Cost (qualitative) | Free tier + free hosting; per-conversation above allowances | Free platform + free hosting tiers |
 
 **Recommendation: WhatsApp primary, Telegram mirror launched early with the same backend.** WhatsApp wins on reach and professional-channel dominance — the research's core reach evidence — and the product is usable within its window model. Telegram is nearly free to add (same backend, thin adapter), proves demand fast, and hedges both WhatsApp's onboarding friction and Telecom's reach gap. **Decision rule for the implementation map:** start WhatsApp onboarding (esp. the billing-rails question) first; if billing rails for a VE entity prove impossible, flip the posture to Telegram-first with WhatsApp deferred — the architecture makes the primary swappable.
+
+### 2.4 Post-decision addendum — Telegram-only (2026-08-22)
+
+**Decision:** the PO discarded WhatsApp completely (issue #19, closed not-planned). lawyer-bot-ve will operate on **Telegram only** — no WABA, no Meta onboarding, no +58 number, no billing-rails probe. The WhatsApp onboarding checklist was not executed; there are no Meta status facts to record.
+
+**Consistency with the study:** §2.3's decision rule made the platform posture conditional on the billing-rails probe and kept the primary swappable; the PO exercised that swap in the strongest direction (Telegram-first → Telegram-only). The reach argument for WhatsApp (§2.1) is real but is weighed against the onboarding/verification/billing burden; the decision resolves the open operational question by removing the platform rather than completing the checklist.
+
+**Implications for the implementation map (#15):** single Telegram adapter — long polling first, webhook (`secret_token`) once on a cloud host; state keyed by `chat_id`; answers chunked to ≤4096 chars; MarkdownV2 citations; `sendDocument` for corpus PDFs (≤50 MB); no conversation window (a bot may message any user who started it); rate limiting ≤1 msg/s per chat; reach fragility monitored via OONI/press (Jan 2025 block precedent).
+
+**Artifacts:** `research/whatsapp/findings.md` retained as archived reference (banner added); map #15 destination/scope updated; tickets #22/#23 refreshed; CONTEXT.md glossary updated.
 
 ---
 
@@ -217,13 +229,12 @@ Disclosure at first interaction + on-demand `/disclaimer` command — **not** ap
 
 ## 7. Implementation architecture outline (for the next map)
 
-A single stateless backend (a fast API + queue) with two thin channel adapters:
+A single stateless backend (a fast API + queue) with one thin channel adapter — Telegram (posture updated 2026-08-22, see §2.4):
 
 - **Shared core:** topic-gating pipeline (deterministic pre-filter → LLM gate → retrieval gate, optional groundedness), retrieval over the official corpus (BM25 + embeddings + re-ranker), answer generation with citation formatting, constants file with all canned copy, eval-set regression harness, telemetry.
-- **WhatsApp adapter (Cloud API):** webhook-driven replies inside the 24h window; template fallback outside it; per-user session state keyed by phone/conversation id; 80 msg/s throughput is irrelevant at launch but plan queuing/retry anyway.
-- **Telegram adapter:** long polling first (free always-on host), webhook (HTTPS, port 443, `secret_token`) once on a cloud host; state keyed by `chat_id`; chunk answers to ≤4096 chars; MarkdownV2 citations; `sendDocument` for corpus PDFs (≤50 MB).
+- **Telegram adapter (Bot API):** long polling first (free always-on host), webhook (HTTPS, port 443, `secret_token`) once on a cloud host; state keyed by `chat_id`; chunk answers to ≤4096 chars; MarkdownV2 citations; `sendDocument` for corpus PDFs (≤50 MB); queuing/retry and rate limiting ≤1 msg/s per chat.
 - **Data posture:** 48–72h retention, no profiling, aggregated metrics only (mirrors §5.1). Verified-attorney gate (bar-number check or attestation) + opt-in human-lawyer escalation.
-- **Ops:** daily Gaceta poll for corpus updates with provenance records (Gaceta Nº, date, pages, URL, SHA-256); monitoring of WABA health, template status, OONI/press for network-level restrictions.
+- **Ops:** daily Gaceta poll for corpus updates with provenance records (Gaceta Nº, date, pages, URL, SHA-256); monitoring of bot health and OONI/press for network-level restrictions.
 
 ---
 
@@ -235,10 +246,10 @@ These are deliberately **not** settled here; they belong to the implementation e
 2. **Corpus ingestion pipeline**: chunking, vector store, OCR batch job, provenance records, daily update poll, broken-record re-check strategy (LISLR 6.210, 403/404 handling).
 3. **LLM/RAG choices**: model selection for the answer engine and the topic gate, embedding model (multilingual), re-ranker, hosting — the gating research prescribes corpus-only retrieval + multilingual embeddings; the exact stack is an implementation decision.
 4. **Labeled eval set for gating** (~20 branches × 10+ queries + off-topic categories) — recommended to start during implementation's first sprint, before prompt/corpus tuning.
-5. **WhatsApp onboarding execution**: business verification, +58 number, display name + templates, and **the billing-rails question** (do it first; it can flip the platform posture per §2.3).
+5. **Platform execution (Telegram-only)**: the posture decision is made (§2.4); the remaining channel work is the Telegram adapter design (chunking, citations, reach monitoring). The original WhatsApp onboarding item is discarded by the 2026-08-22 PO decision.
 6. **Verified-attorney gate design**: bar-number validation path vs attestation opt-in; UX for the public fallback.
 
-**Handoff:** this study is the input to a larger implementation map. The destination of that map: a running bot (WhatsApp + Telegram) with the corpus ingested for its top-N most-consulted laws, gating calibrated on the eval set, and the §7 architecture live.
+**Handoff:** this study is the input to a larger implementation map. The destination of that map: a running **Telegram** bot with the corpus ingested for its top-N most-consulted laws, gating calibrated on the eval set, and the §7 architecture live.
 
 ---
 
