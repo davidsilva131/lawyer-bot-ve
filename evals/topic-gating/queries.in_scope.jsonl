@@ -1,0 +1,240 @@
+{"id":"civ-01","category":"civ","branch":"civil","query":"¿Cuáles son los requisitos para declarar la interdicción de una persona en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"civ-02","category":"civ","branch":"civil","query":"¿Qué dice el Código Civil sobre la prescripción de las acciones?","label":"IN_SCOPE","split":"train"}
+{"id":"civ-03","category":"civ","branch":"civil","query":"Me deben 5.000 dólares desde hace tres años, ¿todavía puedo demandar?","label":"IN_SCOPE","split":"calibration"}
+{"id":"civ-04","category":"civ","branch":"civil","query":"¿Cómo se calcula la indemnización por daños y perjuicios en un accidente de tránsito?","label":"IN_SCOPE","split":"calibration"}
+{"id":"civ-05","category":"civ","branch":"civil","query":"¿Cuál es la mayoría de edad en Venezuela y qué efectos tiene?","label":"IN_SCOPE","split":"calibration"}
+{"id":"civ-06","category":"civ","branch":"civil","query":"¿Qué es la responsabilidad civil extracontractual y cuándo nace?","label":"IN_SCOPE","split":"calibration"}
+{"id":"civ-07","category":"civ","branch":"civil","query":"¿Puedo demandar a mi vecino porque su árbol cayó sobre mi casa?","label":"IN_SCOPE","split":"eval"}
+{"id":"civ-08","category":"civ","branch":"civil","query":"¿Qué requisitos debe tener un poder especial para litigar?","label":"IN_SCOPE","split":"eval"}
+{"id":"civ-09","category":"civ","branch":"civil","query":"¿Hasta cuándo puede reclamarse el pago de una obligación contractual?","label":"IN_SCOPE","split":"eval"}
+{"id":"civ-10","category":"civ","branch":"civil","query":"¿Qué dice la ley sobre las donaciones y su revocación?","label":"IN_SCOPE","split":"eval"}
+{"id":"fam-01","category":"fam","branch":"familia","query":"¿Cuáles son los requisitos para un divorcio en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"fam-02","category":"fam","branch":"familia","query":"¿Cuánto tarda un juicio de divorcio por causal en Venezuela?","label":"IN_SCOPE_UNANSWERABLE","split":"train","note":"plazos judiciales reales fuera del corpus; guiar a fuentes oficiales"}
+{"id":"fam-03","category":"fam","branch":"familia","query":"¿Cómo se calcula la pensión de alimentos para un hijo?","label":"IN_SCOPE","split":"calibration"}
+{"id":"fam-04","category":"fam","branch":"familia","query":"¿Puedo divorciarme sin abogado por mutuo consentimiento?","label":"IN_SCOPE","split":"calibration"}
+{"id":"fam-05","category":"fam","branch":"familia","query":"Mi expareja no me deja ver a mis hijos, ¿qué puedo hacer?","label":"IN_SCOPE","split":"calibration","note":"régimen de convivencia"}
+{"id":"fam-06","category":"fam","branch":"familia","query":"¿Qué pasa con los bienes de la comunidad conyugal al divorciarse?","label":"IN_SCOPE","split":"calibration"}
+{"id":"fam-07","category":"fam","branch":"familia","query":"¿Cómo se reconoce a un hijo fuera del matrimonio?","label":"IN_SCOPE","split":"eval"}
+{"id":"fam-08","category":"fam","branch":"familia","query":"¿Hay que hacer capitulaciones matrimoniales antes de casarse?","label":"IN_SCOPE","split":"eval"}
+{"id":"fam-09","category":"fam","branch":"familia","query":"¿Puede una madre negarle al padre la manutención si no lo ve?","label":"IN_SCOPE","split":"eval"}
+{"id":"fam-10","category":"fam","branch":"familia","query":"¿Qué es la tutela y quién puede ser tutor de un menor?","label":"IN_SCOPE","split":"eval"}
+{"id":"suc-01","category":"suc","branch":"sucesiones","query":"¿Quiénes son los herederos forzosos en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"suc-02","category":"suc","branch":"sucesiones","query":"¿Cómo se hace un testamento en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"suc-03","category":"suc","branch":"sucesiones","query":"Mi papá murió sin dejar testamento, ¿cómo se reparte la herencia?","label":"IN_SCOPE","split":"calibration"}
+{"id":"suc-04","category":"suc","branch":"sucesiones","query":"¿Qué es la legítima de los herederos?","label":"IN_SCOPE","split":"calibration"}
+{"id":"suc-05","category":"suc","branch":"sucesiones","query":"¿Puedo repudiar una herencia que tiene deudas?","label":"IN_SCOPE","split":"calibration"}
+{"id":"suc-06","category":"suc","branch":"sucesiones","query":"¿Es válido un testamento ológrafo?","label":"IN_SCOPE","split":"calibration"}
+{"id":"suc-07","category":"suc","branch":"sucesiones","query":"¿Qué impuestos se pagan por una herencia en Venezuela?","label":"IN_SCOPE","split":"eval"}
+{"id":"suc-08","category":"suc","branch":"sucesiones","query":"Mi hermano vive con mi mamá, ¿tiene derecho a más de la herencia?","label":"IN_SCOPE","split":"eval"}
+{"id":"suc-09","category":"suc","branch":"sucesiones","query":"¿Qué es la partición de la herencia y cómo se tramita?","label":"IN_SCOPE","split":"eval"}
+{"id":"suc-10","category":"suc","branch":"sucesiones","query":"¿Hasta cuándo se puede reclamar una herencia después de la muerte?","label":"IN_SCOPE","split":"eval"}
+{"id":"inn-01","category":"inn","branch":"inmobiliario","query":"¿Cómo se registra una propiedad en Venezuela?","label":"IN_SCOPE","split":"train","note":"registro inmobiliario"}
+{"id":"inn-02","category":"inn","branch":"inmobiliario","query":"¿Qué dice la ley sobre el arrendamiento de viviendas?","label":"IN_SCOPE","split":"train"}
+{"id":"inn-03","category":"inn","branch":"inmobiliario","query":"Mi casero quiere aumentar el canon de arrendamiento, ¿puede hacerlo?","label":"IN_SCOPE","split":"calibration"}
+{"id":"inn-04","category":"inn","branch":"inmobiliario","query":"¿Cómo se desaloja a un inquilino que no paga?","label":"IN_SCOPE","split":"calibration"}
+{"id":"inn-05","category":"inn","branch":"inmobiliario","query":"¿Qué es la prescripción adquisitiva o usucapión?","label":"IN_SCOPE","split":"calibration"}
+{"id":"inn-06","category":"inn","branch":"inmobiliario","query":"¿Cuánto tarda el registro de un documento de compraventa?","label":"IN_SCOPE_UNANSWERABLE","split":"calibration","note":"plazos operativos del registro fuera del corpus"}
+{"id":"inn-07","category":"inn","branch":"inmobiliario","query":"Compré un apartamento y no me lo entregan, ¿qué puedo hacer?","label":"IN_SCOPE","split":"eval"}
+{"id":"inn-08","category":"inn","branch":"inmobiliario","query":"¿Qué es el derecho de preferencia en la venta de un inmueble arrendado?","label":"IN_SCOPE","split":"eval"}
+{"id":"inn-09","category":"inn","branch":"inmobiliario","query":"¿Cuáles son los requisitos para comprar un inmueble por documento privado?","label":"IN_SCOPE","split":"eval"}
+{"id":"inn-10","category":"inn","branch":"inmobiliario","query":"¿Qué pasa si vendo un apartamento que está hipotecado?","label":"IN_SCOPE","split":"eval"}
+{"id":"con-01","category":"con","branch":"contractual","query":"¿Cuáles son los elementos de un contrato válido en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"con-02","category":"con","branch":"contractual","query":"¿Qué pasa si una parte incumple un contrato?","label":"IN_SCOPE","split":"train"}
+{"id":"con-03","category":"con","branch":"contractual","query":"¿Puedo rescindir un contrato que firmé sin leer?","label":"IN_SCOPE","split":"calibration"}
+{"id":"con-04","category":"con","branch":"contractual","query":"¿Qué es la cláusula penal en un contrato?","label":"IN_SCOPE","split":"calibration"}
+{"id":"con-05","category":"con","branch":"contractual","query":"Mi cliente no me pagó la obra, ¿puedo reclamar intereses de mora?","label":"IN_SCOPE","split":"calibration"}
+{"id":"con-06","category":"con","branch":"contractual","query":"¿Cómo se demuestra la existencia de un contrato verbal?","label":"IN_SCOPE","split":"calibration"}
+{"id":"con-07","category":"con","branch":"contractual","query":"¿Qué es la lesión en los contratos y cuándo se puede alegar?","label":"IN_SCOPE","split":"eval"}
+{"id":"con-08","category":"con","branch":"contractual","query":"¿Puedo ceder mi contrato a otra empresa sin permiso?","label":"IN_SCOPE","split":"eval"}
+{"id":"con-09","category":"con","branch":"contractual","query":"¿Qué pasa si el contrato es imposible de cumplir por fuerza mayor?","label":"IN_SCOPE","split":"eval"}
+{"id":"con-10","category":"con","branch":"contractual","query":"¿Cuándo se considera abusiva una cláusula en un contrato de adhesión?","label":"IN_SCOPE","split":"eval"}
+{"id":"mer-01","category":"mer","branch":"mercantil","query":"¿Cuáles son los requisitos para constituir una sociedad anónima en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"mer-02","category":"mer","branch":"mercantil","query":"¿Qué dice el Código de Comercio sobre los libros obligatorios?","label":"IN_SCOPE","split":"train"}
+{"id":"mer-03","category":"mer","branch":"mercantil","query":"¿Cómo se tramita una quiebra o un atraso en Venezuela?","label":"IN_SCOPE","split":"calibration"}
+{"id":"mer-04","category":"mer","branch":"mercantil","query":"¿Qué responsabilidad tienen los administradores de una compañía?","label":"IN_SCOPE","split":"calibration"}
+{"id":"mer-05","category":"mer","branch":"mercantil","query":"¿Cuáles son los requisitos del pagaré?","label":"IN_SCOPE","split":"calibration"}
+{"id":"mer-06","category":"mer","branch":"mercantil","query":"¿Qué es el registro mercantil y para qué sirve?","label":"IN_SCOPE","split":"calibration"}
+{"id":"mer-07","category":"mer","branch":"mercantil","query":"Mi socio quiere salir de la empresa, ¿cuáles son mis opciones?","label":"IN_SCOPE","split":"eval"}
+{"id":"mer-08","category":"mer","branch":"mercantil","query":"¿Cómo se disuelve y liquida una compañía anónima?","label":"IN_SCOPE","split":"eval"}
+{"id":"mer-09","category":"mer","branch":"mercantil","query":"¿Qué diferencia hay entre una compañía anónima y una sociedad de responsabilidad limitada?","label":"IN_SCOPE","split":"eval"}
+{"id":"mer-10","category":"mer","branch":"mercantil","query":"¿Puede un menor de edad ser socio de una compañía?","label":"IN_SCOPE","split":"eval"}
+{"id":"pen-01","category":"pen","branch":"penal","query":"¿Cuáles son los elementos del delito de hurto en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"pen-02","category":"pen","branch":"penal","query":"¿Qué dice el Código Penal sobre la legítima defensa?","label":"IN_SCOPE","split":"train"}
+{"id":"pen-03","category":"pen","branch":"penal","query":"¿Cuál es la pena por tráfico ilícito de drogas en Venezuela?","label":"IN_SCOPE","split":"calibration"}
+{"id":"pen-04","category":"pen","branch":"penal","query":"¿Qué es la prescripción de la acción penal?","label":"IN_SCOPE","split":"calibration"}
+{"id":"pen-05","category":"pen","branch":"penal","query":"Fui amenazado por un vecino, ¿qué delito es y qué puedo hacer?","label":"IN_SCOPE","split":"calibration"}
+{"id":"pen-06","category":"pen","branch":"penal","query":"¿Qué es la tentativa y cómo se castiga?","label":"IN_SCOPE","split":"calibration"}
+{"id":"pen-07","category":"pen","branch":"penal","query":"¿Qué pena tiene la estafa en Venezuela?","label":"IN_SCOPE","split":"eval"}
+{"id":"pen-08","category":"pen","branch":"penal","query":"¿Puedo retirar la denuncia si fui agredido?","label":"IN_SCOPE","split":"eval","note":"depende del tribunal; regla general"}
+{"id":"pen-09","category":"pen","branch":"penal","query":"¿Qué es la libertad condicional y cuándo procede?","label":"IN_SCOPE","split":"eval"}
+{"id":"pen-10","category":"pen","branch":"penal","query":"¿Qué es el concurso de delitos?","label":"IN_SCOPE","split":"eval"}
+{"id":"ppn-01","category":"ppn","branch":"procesal penal","query":"¿Cuáles son las fases del proceso penal venezolano?","label":"IN_SCOPE","split":"train"}
+{"id":"ppn-02","category":"ppn","branch":"procesal penal","query":"¿Qué es la audiencia preliminar en el proceso penal?","label":"IN_SCOPE","split":"train"}
+{"id":"ppn-03","category":"ppn","branch":"procesal penal","query":"¿Cuánto tiempo tengo para denunciar un delito?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ppn-04","category":"ppn","branch":"procesal penal","query":"¿Qué derechos tiene un imputado al ser detenido?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ppn-05","category":"ppn","branch":"procesal penal","query":"¿Cómo funciona la flagrancia en Venezuela?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ppn-06","category":"ppn","branch":"procesal penal","query":"¿Puedo ser juzgado dos veces por el mismo delito?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ppn-07","category":"ppn","branch":"procesal penal","query":"¿Qué es el procedimiento abreviado?","label":"IN_SCOPE","split":"eval"}
+{"id":"ppn-08","category":"ppn","branch":"procesal penal","query":"Mi hijo está detenido y no me dejan verlo, ¿qué hago?","label":"IN_SCOPE","split":"eval"}
+{"id":"ppn-09","category":"ppn","branch":"procesal penal","query":"¿Qué es la privación preventiva de libertad?","label":"IN_SCOPE","split":"eval"}
+{"id":"ppn-10","category":"ppn","branch":"procesal penal","query":"¿Cómo se solicita la revisión de una medida cautelar?","label":"IN_SCOPE","split":"eval"}
+{"id":"ppc-01","category":"ppc","branch":"procesal civil","query":"¿Cuáles son los pasos de un juicio ordinario en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"ppc-02","category":"ppc","branch":"procesal civil","query":"¿Qué requisitos debe cumplir una demanda?","label":"IN_SCOPE","split":"train"}
+{"id":"ppc-03","category":"ppc","branch":"procesal civil","query":"¿Cuánto tiempo tengo para contestar una demanda?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ppc-04","category":"ppc","branch":"procesal civil","query":"¿Qué es la citación y cómo se realiza?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ppc-05","category":"ppc","branch":"procesal civil","query":"¿Cómo se interpone una apelación?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ppc-06","category":"ppc","branch":"procesal civil","query":"¿Qué es la cosa juzgada?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ppc-07","category":"ppc","branch":"procesal civil","query":"¿Qué pruebas se admiten en un juicio civil?","label":"IN_SCOPE","split":"eval"}
+{"id":"ppc-08","category":"ppc","branch":"procesal civil","query":"¿Cómo se ejecuta una sentencia?","label":"IN_SCOPE","split":"eval"}
+{"id":"ppc-09","category":"ppc","branch":"procesal civil","query":"¿Qué es el recurso de casación?","label":"IN_SCOPE","split":"eval"}
+{"id":"ppc-10","category":"ppc","branch":"procesal civil","query":"Me demandaron y no tengo abogado, ¿qué pasa?","label":"IN_SCOPE","split":"eval","note":"asistencia jurídica; defensor"}
+{"id":"lab-01","category":"lab","branch":"laboral","query":"¿Cuántos días de vacaciones me corresponden según la LOTTT?","label":"IN_SCOPE","split":"train"}
+{"id":"lab-02","category":"lab","branch":"laboral","query":"¿Qué me corresponde si me despiden sin preaviso?","label":"IN_SCOPE","split":"train"}
+{"id":"lab-03","category":"lab","branch":"laboral","query":"¿Cómo se calculan las prestaciones sociales?","label":"IN_SCOPE","split":"calibration"}
+{"id":"lab-04","category":"lab","branch":"laboral","query":"¿Cuántas horas semanales son la jornada laboral en Venezuela?","label":"IN_SCOPE","split":"calibration"}
+{"id":"lab-05","category":"lab","branch":"laboral","query":"¿Qué pasa si trabajo sin contrato?","label":"IN_SCOPE","split":"calibration"}
+{"id":"lab-06","category":"lab","branch":"laboral","query":"¿Pueden despedirme por estar embarazada?","label":"IN_SCOPE","split":"calibration","note":"fuero maternal"}
+{"id":"lab-07","category":"lab","branch":"laboral","query":"¿Qué es el bono de alimentación?","label":"IN_SCOPE","split":"eval"}
+{"id":"lab-08","category":"lab","branch":"laboral","query":"¿Cómo se tramita una demanda laboral?","label":"IN_SCOPE","split":"eval"}
+{"id":"lab-09","category":"lab","branch":"laboral","query":"¿Qué días son feriados obligatorios con derecho a pago?","label":"IN_SCOPE","split":"eval"}
+{"id":"lab-10","category":"lab","branch":"laboral","query":"Trabajo por honorarios profesionales, ¿tengo derechos laborales?","label":"IN_SCOPE","split":"eval"}
+{"id":"cst-01","category":"cst","branch":"constitucional","query":"¿Qué dice la Constitución sobre el debido proceso?","label":"IN_SCOPE","split":"train"}
+{"id":"cst-02","category":"cst","branch":"constitucional","query":"¿Qué es el amparo constitucional y cuándo procede?","label":"IN_SCOPE","split":"train"}
+{"id":"cst-03","category":"cst","branch":"constitucional","query":"¿Cuáles son los derechos fundamentales reconocidos en la Constitución?","label":"IN_SCOPE","split":"calibration"}
+{"id":"cst-04","category":"cst","branch":"constitucional","query":"¿Cómo se tramita un amparo constitucional?","label":"IN_SCOPE","split":"calibration"}
+{"id":"cst-05","category":"cst","branch":"constitucional","query":"¿Qué establece la Constitución sobre la propiedad privada?","label":"IN_SCOPE","split":"calibration"}
+{"id":"cst-06","category":"cst","branch":"constitucional","query":"¿Puede un estado restringir la libre circulación de personas?","label":"IN_SCOPE","split":"calibration","note":"marco constitucional"}
+{"id":"cst-07","category":"cst","branch":"constitucional","query":"¿Cómo se reforma la Constitución?","label":"IN_SCOPE","split":"eval"}
+{"id":"cst-08","category":"cst","branch":"constitucional","query":"¿Qué derechos tienen los pueblos indígenas según la Constitución?","label":"IN_SCOPE","split":"eval"}
+{"id":"cst-09","category":"cst","branch":"constitucional","query":"¿Es constitucional una ley que limita la libertad de expresión?","label":"IN_SCOPE","split":"eval","note":"consulta de constitucionalidad con encuadre legal"}
+{"id":"cst-10","category":"cst","branch":"constitucional","query":"¿Qué es el control difuso de la constitucionalidad?","label":"IN_SCOPE","split":"eval"}
+{"id":"adm-01","category":"adm","branch":"administrativo","query":"¿Qué es el procedimiento administrativo en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"adm-02","category":"adm","branch":"administrativo","query":"¿Cómo puedo recurrir una decisión de un ente público?","label":"IN_SCOPE","split":"train"}
+{"id":"adm-03","category":"adm","branch":"administrativo","query":"¿Qué es el silencio administrativo?","label":"IN_SCOPE","split":"calibration"}
+{"id":"adm-04","category":"adm","branch":"administrativo","query":"¿Cómo se solicita una solvencia o un certificado a una alcaldía?","label":"IN_SCOPE","split":"calibration"}
+{"id":"adm-05","category":"adm","branch":"administrativo","query":"¿Cuánto tiempo tengo para demandar a la administración pública?","label":"IN_SCOPE","split":"calibration"}
+{"id":"adm-06","category":"adm","branch":"administrativo","query":"¿Qué es la jurisdicción contencioso-administrativa?","label":"IN_SCOPE","split":"calibration"}
+{"id":"adm-07","category":"adm","branch":"administrativo","query":"Me despidieron de un cargo público sin procedimiento, ¿qué hago?","label":"IN_SCOPE","split":"eval"}
+{"id":"adm-08","category":"adm","branch":"administrativo","query":"¿Qué es la responsabilidad patrimonial del Estado?","label":"IN_SCOPE","split":"eval"}
+{"id":"adm-09","category":"adm","branch":"administrativo","query":"¿Qué es el derecho de petición ante la administración?","label":"IN_SCOPE","split":"eval"}
+{"id":"adm-10","category":"adm","branch":"administrativo","query":"¿Qué pasa si un ministerio no responde mi solicitud?","label":"IN_SCOPE","split":"eval"}
+{"id":"trb-01","category":"trb","branch":"tributario","query":"¿Quiénes están obligados a declarar ISLR en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"trb-02","category":"trb","branch":"tributario","query":"¿Cómo funciona el IVA en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"trb-03","category":"trb","branch":"tributario","query":"¿Cuánto es el ISLR para personas jurídicas?","label":"IN_SCOPE","split":"calibration"}
+{"id":"trb-04","category":"trb","branch":"tributario","query":"¿Qué es el RIF y cómo se tramita?","label":"IN_SCOPE","split":"calibration"}
+{"id":"trb-05","category":"trb","branch":"tributario","query":"¿Cuáles son mis obligaciones tributarias como profesional independiente?","label":"IN_SCOPE","split":"calibration"}
+{"id":"trb-06","category":"trb","branch":"tributario","query":"¿Cómo se paga el impuesto municipal de actividades económicas?","label":"IN_SCOPE","split":"calibration"}
+{"id":"trb-07","category":"trb","branch":"tributario","query":"¿Cuánto tarda el SENIAT en devolver un saldo a favor?","label":"IN_SCOPE_UNANSWERABLE","split":"eval","note":"plazos operativos del SENIAT fuera del corpus"}
+{"id":"trb-08","category":"trb","branch":"tributario","query":"¿Qué pasa si no declaro mis impuestos?","label":"IN_SCOPE","split":"eval"}
+{"id":"trb-09","category":"trb","branch":"tributario","query":"¿Qué retenciones de IVA aplican a mis facturas?","label":"IN_SCOPE","split":"eval"}
+{"id":"trb-10","category":"trb","branch":"tributario","query":"¿Puedo impugnar una multa del SENIAT?","label":"IN_SCOPE","split":"eval"}
+{"id":"adu-01","category":"adu","branch":"aduanero","query":"¿Qué aranceles se pagan al importar mercancía a Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"adu-02","category":"adu","branch":"aduanero","query":"¿Cómo se realiza el despacho aduanero?","label":"IN_SCOPE","split":"train"}
+{"id":"adu-03","category":"adu","branch":"aduanero","query":"¿Qué funciones tiene la aduana en Venezuela?","label":"IN_SCOPE","split":"calibration"}
+{"id":"adu-04","category":"adu","branch":"aduanero","query":"¿Cuántas piezas puedo traer del exterior sin pagar impuestos?","label":"IN_SCOPE","split":"calibration","note":"franquicias aduaneras; políticas vigentes"}
+{"id":"adu-05","category":"adu","branch":"aduanero","query":"¿Qué es el contrabando y cuál es su sanción?","label":"IN_SCOPE","split":"calibration"}
+{"id":"adu-06","category":"adu","branch":"aduanero","query":"¿Cómo se nacionaliza un vehículo importado?","label":"IN_SCOPE","split":"calibration"}
+{"id":"adu-07","category":"adu","branch":"aduanero","query":"¿Qué pasa si no reclamo mi mercancía en la aduana?","label":"IN_SCOPE","split":"eval"}
+{"id":"adu-08","category":"adu","branch":"aduanero","query":"¿Qué es el valor en aduana de una mercancía?","label":"IN_SCOPE","split":"eval"}
+{"id":"adu-09","category":"adu","branch":"aduanero","query":"¿Puedo importar medicamentos para uso personal?","label":"IN_SCOPE","split":"eval","note":"normas sanitarias y aduaneras"}
+{"id":"adu-10","category":"adu","branch":"aduanero","query":"¿Cómo funciona el courier en Venezuela?","label":"IN_SCOPE","split":"eval"}
+{"id":"ban-01","category":"ban","branch":"bancario","query":"¿Qué dice la ley sobre las tasas de interés bancario?","label":"IN_SCOPE","split":"train"}
+{"id":"ban-02","category":"ban","branch":"bancario","query":"¿Cuáles son los derechos de un usuario bancario?","label":"IN_SCOPE","split":"train"}
+{"id":"ban-03","category":"ban","branch":"bancario","query":"Mi banco me bloqueó la cuenta sin aviso, ¿qué puedo hacer?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ban-04","category":"ban","branch":"bancario","query":"¿Cómo se reclama un fraude en una tarjeta de débito?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ban-05","category":"ban","branch":"bancario","query":"¿Qué es el fideicomiso?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ban-06","category":"ban","branch":"bancario","query":"¿Qué pasa si un banco quiebra?","label":"IN_SCOPE","split":"calibration","note":"protección de depósitos"}
+{"id":"ban-07","category":"ban","branch":"bancario","query":"¿Puede un banco cobrarme comisiones no pactadas?","label":"IN_SCOPE","split":"eval"}
+{"id":"ban-08","category":"ban","branch":"bancario","query":"¿Qué regula la Superintendencia de las Instituciones del Sector Bancario?","label":"IN_SCOPE","split":"eval"}
+{"id":"ban-09","category":"ban","branch":"bancario","query":"¿Cómo se constituye una cuenta conjunta?","label":"IN_SCOPE","split":"eval"}
+{"id":"ban-10","category":"ban","branch":"bancario","query":"¿Puede un banco en Venezuela congelar mis fondos?","label":"IN_SCOPE","split":"eval","note":"normas de banca central"}
+{"id":"seg-01","category":"seg","branch":"seguros","query":"¿Cuáles son los seguros obligatorios en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"seg-02","category":"seg","branch":"seguros","query":"¿Qué hago si mi aseguradora no paga el siniestro?","label":"IN_SCOPE","split":"train"}
+{"id":"seg-03","category":"seg","branch":"seguros","query":"¿Cuánto tiempo tengo para reclamar un seguro?","label":"IN_SCOPE","split":"calibration"}
+{"id":"seg-04","category":"seg","branch":"seguros","query":"¿Cuáles son los elementos del contrato de seguro?","label":"IN_SCOPE","split":"calibration"}
+{"id":"seg-05","category":"seg","branch":"seguros","query":"¿Qué es la póliza de responsabilidad civil?","label":"IN_SCOPE","split":"calibration"}
+{"id":"seg-06","category":"seg","branch":"seguros","query":"¿Puede la aseguradora rechazar mi reclamo por no declarar algo?","label":"IN_SCOPE","split":"calibration","note":"declaración del riesgo"}
+{"id":"seg-07","category":"seg","branch":"seguros","query":"¿Cómo funciona el seguro de vida?","label":"IN_SCOPE","split":"eval"}
+{"id":"seg-08","category":"seg","branch":"seguros","query":"Choqué el carro de un amigo, ¿cubre mi seguro?","label":"IN_SCOPE","split":"eval"}
+{"id":"seg-09","category":"seg","branch":"seguros","query":"¿Qué es la prima de un seguro?","label":"IN_SCOPE","split":"eval"}
+{"id":"seg-10","category":"seg","branch":"seguros","query":"¿Qué dice la Ley de Contrato de Seguro sobre la caducidad?","label":"IN_SCOPE","split":"eval"}
+{"id":"pi-01","category":"pi","branch":"propiedad intelectual","query":"¿Cómo se registra una marca en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"pi-02","category":"pi","branch":"propiedad intelectual","query":"¿Qué protege el derecho de autor en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"pi-03","category":"pi","branch":"propiedad intelectual","query":"¿Cómo se registra una patente?","label":"IN_SCOPE","split":"calibration"}
+{"id":"pi-04","category":"pi","branch":"propiedad intelectual","query":"¿Hasta cuándo dura la protección de una obra musical?","label":"IN_SCOPE","split":"calibration"}
+{"id":"pi-05","category":"pi","branch":"propiedad intelectual","query":"¿Qué es el plagio y cuándo se comete?","label":"IN_SCOPE","split":"calibration"}
+{"id":"pi-06","category":"pi","branch":"propiedad intelectual","query":"¿Puedo usar una imagen de internet en mi sitio web?","label":"IN_SCOPE","split":"calibration"}
+{"id":"pi-07","category":"pi","branch":"propiedad intelectual","query":"¿Qué es el SAPI y qué funciones tiene?","label":"IN_SCOPE","split":"eval"}
+{"id":"pi-08","category":"pi","branch":"propiedad intelectual","query":"¿Cómo se registra una obra literaria?","label":"IN_SCOPE","split":"eval"}
+{"id":"pi-09","category":"pi","branch":"propiedad intelectual","query":"¿Qué es una licencia creative commons en la ley venezolana?","label":"IN_SCOPE_UNANSWERABLE","split":"eval","note":"figura no regulada en el corpus planificado"}
+{"id":"pi-10","category":"pi","branch":"propiedad intelectual","query":"¿Qué pasa si alguien usa mi marca sin permiso?","label":"IN_SCOPE","split":"eval"}
+{"id":"cons-01","category":"cons","branch":"consumidor","query":"¿Cuáles son mis derechos al comprar un producto defectuoso?","label":"IN_SCOPE","split":"train"}
+{"id":"cons-02","category":"cons","branch":"consumidor","query":"¿Qué dice la ley sobre las garantías de los productos?","label":"IN_SCOPE","split":"train"}
+{"id":"cons-03","category":"cons","branch":"consumidor","query":"Compré un teléfono y no me hacen la garantía, ¿qué hago?","label":"IN_SCOPE","split":"calibration"}
+{"id":"cons-04","category":"cons","branch":"consumidor","query":"¿Dónde puedo denunciar un abuso de una empresa de telefonía?","label":"IN_SCOPE_UNANSWERABLE","split":"train","note":"órganos de denuncia cambiantes y fuera del corpus"}
+{"id":"cons-05","category":"cons","branch":"consumidor","query":"¿Cómo denuncio una publicidad engañosa?","label":"IN_SCOPE","split":"calibration"}
+{"id":"cons-06","category":"cons","branch":"consumidor","query":"¿Puede una tienda cobrarme un recargo por pagar con tarjeta?","label":"IN_SCOPE","split":"calibration"}
+{"id":"cons-07","category":"cons","branch":"consumidor","query":"¿Puedo devolver un producto comprado por internet?","label":"IN_SCOPE","split":"eval","note":"política de devoluciones"}
+{"id":"cons-08","category":"cons","branch":"consumidor","query":"¿Cómo puedo reclamar el exceso de cobro en mi factura de servicios?","label":"IN_SCOPE","split":"eval"}
+{"id":"cons-09","category":"cons","branch":"consumidor","query":"¿Qué dice la ley sobre la información de precios al consumidor?","label":"IN_SCOPE","split":"eval"}
+{"id":"cons-10","category":"cons","branch":"consumidor","query":"Me vendieron un producto usado como nuevo, ¿qué puedo hacer?","label":"IN_SCOPE","split":"eval"}
+{"id":"agr-01","category":"agr","branch":"agrario","query":"¿Qué dice la Ley de Tierras sobre la ocupación de tierras?","label":"IN_SCOPE","split":"train"}
+{"id":"agr-02","category":"agr","branch":"agrario","query":"¿Cuáles son los derechos de los campesinos en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"agr-03","category":"agr","branch":"agrario","query":"¿Qué es la jurisdicción agraria?","label":"IN_SCOPE","split":"calibration"}
+{"id":"agr-04","category":"agr","branch":"agrario","query":"¿Cómo se tramita una expropiación agraria?","label":"IN_SCOPE","split":"calibration"}
+{"id":"agr-05","category":"agr","branch":"agrario","query":"¿Qué es una cooperativa agrícola y cómo se forma?","label":"IN_SCOPE","split":"calibration"}
+{"id":"agr-06","category":"agr","branch":"agrario","query":"¿Qué derechos tiene un conuquero sobre sus tierras?","label":"IN_SCOPE","split":"calibration"}
+{"id":"agr-07","category":"agr","branch":"agrario","query":"¿Puede una empresa agroindustrial ocupar tierras ociosas?","label":"IN_SCOPE","split":"eval"}
+{"id":"agr-08","category":"agr","branch":"agrario","query":"¿Cómo se obtienen los títulos de tierra?","label":"IN_SCOPE","split":"eval"}
+{"id":"agr-09","category":"agr","branch":"agrario","query":"¿Qué requisitos se exigen para la declaratoria de utilidad pública?","label":"IN_SCOPE","split":"eval"}
+{"id":"agr-10","category":"agr","branch":"agrario","query":"¿Qué es la garantía de permanencia de los campesinos?","label":"IN_SCOPE","split":"eval"}
+{"id":"amb-01","category":"amb","branch":"ambiental","query":"¿Qué dice la ley sobre la protección del ambiente en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"amb-02","category":"amb","branch":"ambiental","query":"¿Cuáles son los delitos ambientales en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"amb-03","category":"amb","branch":"ambiental","query":"¿Cómo se tramita una evaluación de impacto ambiental?","label":"IN_SCOPE","split":"calibration"}
+{"id":"amb-04","category":"amb","branch":"ambiental","query":"¿Quién emite los permisos ambientales en Venezuela?","label":"IN_SCOPE","split":"calibration"}
+{"id":"amb-05","category":"amb","branch":"ambiental","query":"¿Qué pasa si una empresa contamina un río?","label":"IN_SCOPE","split":"calibration"}
+{"id":"amb-06","category":"amb","branch":"ambiental","query":"¿Qué es la Ley Penal del Ambiente?","label":"IN_SCOPE","split":"calibration"}
+{"id":"amb-07","category":"amb","branch":"ambiental","query":"¿Puedo denunciar la tala ilegal en mi zona?","label":"IN_SCOPE","split":"eval"}
+{"id":"amb-08","category":"amb","branch":"ambiental","query":"¿Qué dice la ley sobre el manejo de desechos peligrosos?","label":"IN_SCOPE","split":"eval"}
+{"id":"amb-09","category":"amb","branch":"ambiental","query":"¿Quién responde por los daños ambientales?","label":"IN_SCOPE","split":"eval"}
+{"id":"amb-10","category":"amb","branch":"ambiental","query":"¿Qué es un área bajo régimen de administración especial?","label":"IN_SCOPE","split":"eval"}
+{"id":"mig-01","category":"mig","branch":"migratorio","query":"¿Cuáles son los requisitos para residenciarse en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"mig-02","category":"mig","branch":"migratorio","query":"¿Qué dice la Ley de Extranjería y Migración?","label":"IN_SCOPE","split":"train"}
+{"id":"mig-03","category":"mig","branch":"migratorio","query":"¿Cómo tramito mi pasaporte venezolano en el exterior?","label":"IN_SCOPE_UNANSWERABLE","split":"calibration","note":"tramitación consular fuera del corpus"}
+{"id":"mig-04","category":"mig","branch":"migratorio","query":"¿Puede un extranjero trabajar en Venezuela sin residencia?","label":"IN_SCOPE","split":"calibration"}
+{"id":"mig-05","category":"mig","branch":"migratorio","query":"¿Qué es el SAIME y qué trámites realiza?","label":"IN_SCOPE","split":"calibration"}
+{"id":"mig-06","category":"mig","branch":"migratorio","query":"¿Puedo ser deportado de Venezuela?","label":"IN_SCOPE","split":"calibration"}
+{"id":"mig-07","category":"mig","branch":"migratorio","query":"¿Qué derechos tiene un refugiado en Venezuela?","label":"IN_SCOPE","split":"eval"}
+{"id":"mig-08","category":"mig","branch":"migratorio","query":"¿Cómo se tramita una visa de trabajo en Venezuela?","label":"IN_SCOPE","split":"eval"}
+{"id":"mig-09","category":"mig","branch":"migratorio","query":"¿Cómo se renueva la cédula de identidad?","label":"IN_SCOPE","split":"eval"}
+{"id":"mig-10","category":"mig","branch":"migratorio","query":"¿Qué documentos necesito para viajar con un niño al exterior?","label":"IN_SCOPE","split":"eval","note":"permiso de viaje de menores"}
+{"id":"mun-01","category":"mun","branch":"municipal","query":"¿Qué son las ordenanzas municipales?","label":"IN_SCOPE","split":"train"}
+{"id":"mun-02","category":"mun","branch":"municipal","query":"¿Cómo se calcula el impuesto de patente de industria y comercio?","label":"IN_SCOPE","split":"train"}
+{"id":"mun-03","category":"mun","branch":"municipal","query":"¿Qué es la licencia de actividades económicas?","label":"IN_SCOPE","split":"calibration"}
+{"id":"mun-04","category":"mun","branch":"municipal","query":"¿Cómo se tramita un permiso de construcción?","label":"IN_SCOPE","split":"calibration"}
+{"id":"mun-05","category":"mun","branch":"municipal","query":"¿Cuáles son las tasas municipales más comunes?","label":"IN_SCOPE","split":"calibration"}
+{"id":"mun-06","category":"mun","branch":"municipal","query":"¿Quién fija el aseo urbano y cómo se cobra?","label":"IN_SCOPE","split":"calibration"}
+{"id":"mun-07","category":"mun","branch":"municipal","query":"¿Qué es el catastro municipal?","label":"IN_SCOPE","split":"eval"}
+{"id":"mun-08","category":"mun","branch":"municipal","query":"¿Cómo se reclama una multa municipal?","label":"IN_SCOPE","split":"eval"}
+{"id":"mun-09","category":"mun","branch":"municipal","query":"¿Qué competencias tienen las alcaldías según la ley?","label":"IN_SCOPE","split":"eval"}
+{"id":"mun-10","category":"mun","branch":"municipal","query":"¿Qué es el impuesto sobre inmuebles urbanos?","label":"IN_SCOPE","split":"eval"}
+{"id":"ele-01","category":"ele","branch":"electoral","query":"¿Cuáles son los requisitos para votar en Venezuela?","label":"IN_SCOPE","split":"train"}
+{"id":"ele-02","category":"ele","branch":"electoral","query":"¿Qué dice la ley sobre las campañas electorales?","label":"IN_SCOPE","split":"train"}
+{"id":"ele-03","category":"ele","branch":"electoral","query":"¿Cómo me inscribo en el registro electoral?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ele-04","category":"ele","branch":"electoral","query":"¿Qué funciones tiene el Consejo Nacional Electoral?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ele-05","category":"ele","branch":"electoral","query":"¿Qué es la revocatoria del mandato?","label":"IN_SCOPE","split":"calibration"}
+{"id":"ele-06","category":"ele","branch":"electoral","query":"¿Puedo votar si tengo antecedentes penales?","label":"IN_SCOPE","split":"calibration","note":"suspensión de derechos políticos"}
+{"id":"ele-07","category":"ele","branch":"electoral","query":"¿Cómo funciona el sistema de votación en Venezuela?","label":"IN_SCOPE","split":"eval"}
+{"id":"ele-08","category":"ele","branch":"electoral","query":"¿Cuáles son los derechos políticos de los extranjeros en Venezuela?","label":"IN_SCOPE","split":"eval"}
+{"id":"ele-09","category":"ele","branch":"electoral","query":"¿Qué es la observación electoral?","label":"IN_SCOPE","split":"eval"}
+{"id":"ele-10","category":"ele","branch":"electoral","query":"¿Cómo se eligen los diputados a la Asamblea Nacional?","label":"IN_SCOPE","split":"eval"}
+{"id":"nna-01","category":"nna","branch":"nna","query":"¿Qué dice la LOPNNA sobre los derechos de los niños?","label":"IN_SCOPE","split":"train"}
+{"id":"nna-02","category":"nna","branch":"nna","query":"¿Cuáles son las responsabilidades de los padres según la LOPNNA?","label":"IN_SCOPE","split":"train"}
+{"id":"nna-03","category":"nna","branch":"nna","query":"¿Qué es la colocación familiar?","label":"IN_SCOPE","split":"calibration"}
+{"id":"nna-04","category":"nna","branch":"nna","query":"¿Qué pasa si un adolescente comete un delito?","label":"IN_SCOPE","split":"calibration","note":"responsabilidad penal del adolescente"}
+{"id":"nna-05","category":"nna","branch":"nna","query":"¿Cómo se tramita la adopción en Venezuela?","label":"IN_SCOPE","split":"calibration"}
+{"id":"nna-06","category":"nna","branch":"nna","query":"¿Puede un adolescente trabajar en Venezuela?","label":"IN_SCOPE","split":"calibration"}
+{"id":"nna-07","category":"nna","branch":"nna","query":"¿Qué es la medida de protección de un niño en riesgo?","label":"IN_SCOPE","split":"eval"}
+{"id":"nna-08","category":"nna","branch":"nna","query":"¿Cómo se calcula la manutención de un hijo adolescente?","label":"IN_SCOPE","split":"eval"}
+{"id":"nna-09","category":"nna","branch":"nna","query":"¿Quién decide la custodia de un niño cuando los padres se separan?","label":"IN_SCOPE","split":"eval"}
+{"id":"nna-10","category":"nna","branch":"nna","query":"¿Qué es la adopción internacional y cómo funciona?","label":"IN_SCOPE","split":"eval"}
